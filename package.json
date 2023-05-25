@@ -1,6 +1,6 @@
 {
   "name": "wxhtml",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "miniprogram": "src",
   "main": "index.js",
   "typings": "index.d.ts",
