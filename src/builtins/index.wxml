@@ -1,0 +1,12 @@
+<template name="whoami">
+  <whoami node="{{node}}"></whoami>
+</template>
+<template name="img">
+  <image data-index="{{node.__index}}" src="{{node.attrs.src}}" class="{{attrs.class}}" style="{{attrs.style}}" mode="aspectFit"></image>
+</template>
+<template name="video">
+  <video data-index="{{__index}}" src="{{attrs.src}}" class="{{attrs.class}}" style="{{attrs.style}}" loop="{{attrs.loop}}" controls="{{attrs.controls}}" autoplay="{{attrs.autoplay}}"></video>
+</template>
+<view>
+  <template is="{{node.name}}" data="{{ node }}"></template>
+</view>

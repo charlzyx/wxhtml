@@ -1,0 +1,42 @@
+<!-- text render -->
+<text wx:if="{{textonly}}" user-select="{{selectable}}" decode space="nbsp">{{textonly}}</text>
+<!-- children render -->
+<block wx:if="{{!textonly && !root}}">
+  <block wx:for="{{tree}}" wx:for-item="node" wx:key="index">
+    <!-- override tag render -->
+    <block wx:if="{{overrides[node.name]}}">
+      <elements data-index="{{index}}" mut-bind:tap="bindtap" node="{{node}}"></elements>
+    </block>
+    <!-- html tag recursion render -->
+    <block wx:elif="{{!builtins[node.name] && htmls[node.name]}}">
+      <view class="{{node.name}} {{node.attrs.class}}" style="{{node.attrs.style}}">
+        <wxhtml selectable="{{node.attrs.selectable}}" data-class="{{node.name}}" data-index="{{index}}" mut-bind:tap="bindtap" root="{{false}}" nodes="{{node.children}}"></wxhtml>
+      </view>
+    </block>
+    <!-- custome render -->
+    <block wx:elif="{{!builtins[node.name] && !htmls[node.name]}}">
+      <elements data-index="{{index}}" mut-bind:tap="bindtap" wx:if="{{node.name}}" node="{{node}}"></elements>
+      <wxhtml selectable="{{node.attrs.selectable}}" data-class="{{node.name}}" data-index="{{index}}" mut-bind:tap="bindtap" root="{{false}}" wx:else nodes="{{node.children}}"></wxhtml>
+    </block>
+  </block>
+</block>
+<!-- root render -->
+<view wx:if="{{!textonly && root}}" class="wxhtml {{theme}}">
+  <block wx:for="{{tree}}" wx:for-item="node" wx:key="index">
+    <!-- override tag render -->
+    <block wx:if="{{overrides[node.name]}}">
+      <elements data-index="{{index}}" mut-bind:tap="bindtap" node="{{node}}"></elements>
+    </block>
+    <!-- html tag recursion render -->
+    <block wx:elif="{{!builtins[node.name] && htmls[node.name]}}">
+      <view class="{{node.name}} {{node.attrs.class}}" style="{{node.attrs.style}}">
+        <wxhtml selectable="{{node.attrs.selectable}}" data-class="{{node.name}}" data-index="{{index}}" mut-bind:tap="bindtap" root="{{false}}" nodes="{{node.children}}"></wxhtml>
+      </view>
+    </block>
+    <!-- custome render -->
+    <block wx:elif="{{!builtins[node.name] && !htmls[node.name]}}">
+      <elements data-index="{{index}}" mut-bind:tap="bindtap" wx:if="{{node.name}}" node="{{node}}"></elements>
+      <wxhtml selectable="{{node.attrs.selectable}}" data-class="{{node.name}}" data-index="{{index}}" mut-bind:tap="bindtap" root="{{false}}" wx:else nodes="{{node.children}}"></wxhtml>
+    </block>
+  </block>
+</view>

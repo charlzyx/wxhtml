@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wxhtml": "./index"
+  },
+  "componentGenerics": {
+    "elements": {
+      "default": "./builtins"
+    }
+  }
+}

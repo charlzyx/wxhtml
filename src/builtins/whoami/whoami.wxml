@@ -1,0 +1,4 @@
+<view style="border: 2px solid #cecece; border-radius: 4px; padding: 4px;">
+  <view>WHO AM I</view>
+  <text space="nbsp" style="white-space:pre-wrap">{{json}}</text>
+</view>

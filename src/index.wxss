@@ -1,0 +1,433 @@
+.html {
+  display: block;
+}
+
+.body {
+  display: block;
+  margin: 8px;
+}
+
+.p {
+  display: block;
+  margin-inline-end: 0;
+}
+
+.div {
+  display: block;
+}
+
+.article,
+.aside,
+.footer,
+.header,
+.hgroup,
+.main,
+.nav,
+.section {
+  display: block;
+}
+
+.marquee {
+  display: inline-block;
+  width: -webkit-fill-available;
+}
+
+.address {
+  display: block;
+}
+
+.blockquote {
+  display: block;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.figcaption {
+  display: block;
+}
+
+.figure {
+  display: block;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.q {
+  display: inline;
+}
+
+.q:before {
+  content: open-quote;
+}
+
+.q:after {
+  content: close-quote;
+}
+
+.center {
+  display: block;
+  text-align: -webkit-center;
+}
+
+.hr {
+  display: block;
+  overflow: hidden;
+  unicode-bidi: isolate;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.h4 {
+  display: block;
+  font-weight: bold;
+}
+
+.h5 {
+  display: block;
+  font-size: .83em;
+  font-weight: bold;
+}
+
+.h6 {
+  display: block;
+  font-size: .67em;
+  font-weight: bold;
+}
+
+.table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+  box-sizing: border-box;
+  text-indent: initial;
+}
+
+.thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table > tr {
+  vertical-align: middle;
+}
+
+.col {
+  display: table-column;
+}
+
+.colgroup {
+  display: table-column-group;
+}
+
+.tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.td,
+.th {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.th {
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+.caption {
+  display: table-caption;
+  text-align: -webkit-center;
+}
+
+.ul,
+.menu,
+.dir {
+  display: block;
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+
+.ol {
+  display: block;
+  list-style-type: decimal;
+  padding-inline-start: 40px;
+}
+
+.li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.ul .ul,
+.ol .ul {
+  list-style-type: circle;
+}
+
+.ol .ol .ul,
+.ol .ul .ul,
+.ul .ol .ul,
+.ul .ul .ul {
+  list-style-type: square;
+}
+
+.dd {
+  display: block;
+}
+
+.dl {
+  display: block;
+}
+
+.dt {
+  display: block;
+}
+
+.legend {
+  display: block;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
+  border: none;
+}
+
+.fieldset {
+  display: block;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  border: 2px groove #C0C0C0;
+  min-inline-size: min-content;
+}
+
+
+.area {
+  display: inline;
+}
+
+.output {
+  display: inline;
+}
+
+.meter {
+  appearance: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  block-size: 1em;
+  inline-size: 5em;
+  vertical-align: -0.2em;
+  -webkit-user-modify: read-only !important;
+}
+
+
+.u,
+.ins {
+  text-decoration: underline;
+}
+
+.abbr[title],
+.acronym[title] {
+  text-decoration: dotted underline;
+}
+
+.strong,
+.b {
+  font-weight: bold;
+}
+
+.i,
+.cite,
+.em,
+.var,
+.address,
+.dfn {
+  font-style: italic;
+  display: inline;
+}
+
+.tt,
+.code,
+.kbd,
+.samp {
+  font-family: monospace;
+  display: inline;
+}
+
+.pre,
+.xmp,
+.plaintext,
+.listing {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1__qem 0;
+}
+
+.mark {
+  background-color: Mark;
+  color: MarkText;
+}
+
+
+.s,
+.strike,
+.del {
+  text-decoration: line-through;
+}
+
+.sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+
+.ruby,
+.rt {
+  text-indent: 0;
+}
+
+.rt {
+  line-height: normal;
+  text-emphasis: none;
+}
+
+.ruby > .rt {
+  display: block;
+  font-size: 50%;
+  text-align: start;
+}
+
+.frameset,
+.frame {
+  display: block;
+}
+
+.frameset {
+  border-color: inherit;
+}
+
+
+.fencedframe {
+  border: 2px inset;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+}
+
+.details {
+  display: block;
+}
+
+.summary {
+  display: block;
+}
+
+.details > .summary:first-of-type {
+  display: list-item;
+  counter-increment: list-item 0;
+  list-style: disclosure-closed inside;
+}
+
+.details[open] > .summary:first-of-type {
+  list-style-type: disclosure-open;
+}
+
+.bdi,
+.output {
+  unicode-bidi: isolate;
+}
+
+.bdo {
+  unicode-bidi: bidi-override;
+}
+
+
+
+.big {
+  font-size: 110%;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.sub,
+.sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sub {
+  bottom: -0.25em;
+}
+
+.sup {
+  top: -0.5em;
+}
+
+
+.legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+
+.details {
+  display: block;
+}
+
+.summary {
+  display: list-item;
+}
+
+.a {
+  text-decoration: underline;
+}

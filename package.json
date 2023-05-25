@@ -1,0 +1,13 @@
+{
+  "name": "wxhtml",
+  "version": "0.1.0",
+  "miniprogram": "src",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {}
+}
