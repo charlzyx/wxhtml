@@ -271,6 +271,7 @@
 }
 
 .i,
+.span
 .cite,
 .em,
 .var,
