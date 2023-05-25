@@ -1,9 +1,6 @@
 <template name="whoami">
   <whoami node="{{node}}"></whoami>
 </template>
-<template name="span">
-  <text class="{{attrs.class}}" style="{{attrs.style}}">{{ndoe.children}}</text>
-</template>
 <template name="img">
   <image data-index="{{node.__index}}" src="{{node.attrs.src}}" class="{{attrs.class}}" style="{{attrs.style}}" mode="aspectFit"></image>
 </template>
