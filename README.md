@@ -1,17 +1,20 @@
+![wxhtml](./logo.png)
 # `<wxhtml />` 小程序富文本组件
 
-## Features 功能
 
-- 支持点击事件监听 `<wxhtml bindclick="onclick" />`
-- 自定义组件 `<wxhtml n generic:elements="custome" />`
-- 自定义主题 `<wxhtml theme="custome" />`
+## 对比
+
+||`rich-text`|`wxhtml`|
+|---|---|---|
+|点击事件|❌|✅|
+|自定义组件|❌|✅|
+|主题配置|❌|✅|
 
 
 ## ClickEvent 点击事件 [TODO]
-
-## Theme 主题 [TODO]
-
+`<wxhtml bindclick="onclick" />`
 ## Custome 自定义组件 [TODO]
+`<wxhtml generic:elements="custome" />`
 
 ```html
 <template name="demo">
@@ -45,3 +48,5 @@
 </view>
 
 ```
+## Theme 主题 [TODO]
+`<wxhtml theme="custome" />`
