@@ -50,3 +50,8 @@
 ```
 ## Theme 主题 [TODO]
 `<wxhtml theme="custome" />`
+
+
+## Example Project 示例项目
+
+[https://github.com/charlzyx/wxhtml-example](https://github.com/charlzyx/wxhtml-example)
